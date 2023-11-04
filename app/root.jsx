@@ -40,6 +40,7 @@ export default function App() {
       <body>
         <Header />
         <Outlet />
+        <hr />
         <Footer />
         <Scripts />
         <LiveReload />

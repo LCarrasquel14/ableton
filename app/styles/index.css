@@ -1,5 +1,5 @@
 :root {
-  --wallpaper: #e7e7e7;
+  --wallpaper: rgb(255, 255, 255);
   --block: #ffffff;
   --text: #000;
   --active: #ff764d;
@@ -31,8 +31,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 9px 30px;
-  background-color: var(--block);
-  border-bottom: 2px solid #8f8f8f;
+  border-bottom: 2px solid #f0f0f0;
 }
 
 .header .left-side {
@@ -63,10 +62,6 @@ body {
   text-transform: capitalize;
   transition-property: color;
   transition-duration: 300ms;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .link:focus {
@@ -75,4 +70,131 @@ body {
 
 .link.special {
   color: #0000ff;
+}
+
+/* section */
+.section-container {
+  margin-bottom: 100px;
+}
+.section-hero {
+  width: 85%;
+  height: 75vh;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.section-hero .title {
+  color: #f95252;
+  font-size: 109px;
+  text-transform: capitalize;
+}
+.section-img {
+  width: 85%;
+  height: 79vh;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/poster-meet-the-makers.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.section-container .content {
+  width: 53%;
+  margin: 0 auto;
+}
+
+.content .subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.link-text {
+  text-decoration: none;
+}
+/* section image */
+.first {
+  height: 740px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 40%,
+    rgb(252, 255, 152) 37%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.first .img:nth-child(1) img {
+  width: 550px;
+}
+.second {
+  display: flex;
+  height: 886px;
+  padding: 50px 0;
+  background: linear-gradient(
+    90deg,
+    rgb(169, 254, 177) 64%,
+    rgb(255, 255, 255) 64%
+  );
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.second .img:nth-child(1) {
+  margin-bottom: 80px;
+}
+/* section video */
+.video {
+  width: 700px;
+  height: 400px;
+}
+.text-video {
+  font-size: 13px;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.footer-container .title {
+  font-size: 50px;
+}
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+}
+.nav-container .colums {
+  display: flex;
+  flex-direction: column;
+}
+.nav-container .link {
+  text-decoration: none;
+  font-weight: 200;
+}
+.nav-container .link .icon {
+  font-size: 30px;
+  color: #ffffff;
+}
+.bxl-facebook {
+  background-color: #0000ff;
+}
+.bxl-twitter {
+  background-color: aqua;
+}
+.bxl-youtube {
+  background-color: red;
+}
+.bxl-instagram {
+  background-color: #ff764d;
 }
